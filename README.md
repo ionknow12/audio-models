@@ -1,13 +1,10 @@
-# kookie-models
-
-Model files that [Kookie](https://github.com/ionknow12) downloads on first use. Nothing else lives here.
+# audio-models
 
 ## htdemucs-v1.onnx (release `htdemucs-v1`)
 
 Meta's **Hybrid Transformer Demucs** (`htdemucs`, 4 sources: drums, bass, other, vocals),
-converted to ONNX for Kookie's built-in stem separation. Only the network is in the file;
-the STFT/iSTFT and segment cross-fades run in Kookie. Weights are stored as float16 and
-cast to float32 when loaded (the maths is float32).
+converted to ONNX. Only the network is in the file; the STFT/iSTFT and segment cross-fades
+run outside it. Weights are stored as float16 and cast to float32 when loaded.
 
 - Source: https://github.com/facebookresearch/demucs — MIT License, Copyright (c) Meta Platforms, Inc. and affiliates.
 - SHA-256: `f3ad66657fa57e1fa2622aa70475e011361afbe324bd16f4754c75be5f3b7d4b` (90,561,457 bytes)
